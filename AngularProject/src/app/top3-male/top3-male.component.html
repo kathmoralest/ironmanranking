@@ -1,0 +1,24 @@
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Podio IronMan Masculino 2019</h6>
+    </div>
+    <div class="card-body">
+      <!-- llevar a componente -->
+    </div>
+
+    <!-- Tabla con datos -->
+
+  <table>
+    <tbody>
+        <tr *ngFor="let datum of data">
+          <ng-container *ngIf="datum.Gender === 'Male' && datum.Year === '2019' ">
+          <th>{{  datum.Athlete  }}</th>
+            <td>{{  datum.Country  }}</td>
+            <td>{{  datum.Time }}</td>
+            <td>{{  datum.Place }}</td>
+          </ng-container>
+        </tr>
+    </tbody>
+</table>
+
+</div>

@@ -6,17 +6,26 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { Top3MaleComponent } from './top3-male/top3-male.component';
+import { Top3FemComponent } from './top3-fem/top3-fem.component';
+import { GraficoComponent } from './grafico/grafico.component';
+
+import { HttpClientModule } from  '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    Top3MaleComponent,
+    Top3FemComponent,
+    GraficoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule  //Registro de módulo importado
   ],
   providers: [],
   bootstrap: [AppComponent]
