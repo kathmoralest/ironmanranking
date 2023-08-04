@@ -11,6 +11,8 @@ import { Top3FemComponent } from './top3-fem/top3-fem.component';
 import { GraficoComponent } from './grafico/grafico.component';
 
 import { HttpClientModule } from  '@angular/common/http';
+import { PromedioTiempoManComponent } from './promedio-tiempo-man/promedio-tiempo-man.component';
+import { PromedioTiempoFemComponent } from './promedio-tiempo-fem/promedio-tiempo-fem.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HttpClientModule } from  '@angular/common/http';
     AboutComponent,
     Top3MaleComponent,
     Top3FemComponent,
-    GraficoComponent
+    GraficoComponent,
+    PromedioTiempoManComponent,
+    PromedioTiempoFemComponent
   ],
   imports: [
     BrowserModule,
