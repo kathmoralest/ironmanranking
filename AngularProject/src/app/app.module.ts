@@ -14,6 +14,9 @@ import { HttpClientModule } from  '@angular/common/http';
 import { PromedioTiempoManComponent } from './promedio-tiempo-man/promedio-tiempo-man.component';
 import { PromedioTiempoFemComponent } from './promedio-tiempo-fem/promedio-tiempo-fem.component';
 
+import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+import { TitulostotalComponent } from './titulostotal/titulostotal.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,10 +27,12 @@ import { PromedioTiempoFemComponent } from './promedio-tiempo-fem/promedio-tiemp
     Top3FemComponent,
     GraficoComponent,
     PromedioTiempoManComponent,
-    PromedioTiempoFemComponent
+    PromedioTiempoFemComponent,
+    TitulostotalComponent,
   ],
   imports: [
     BrowserModule,
+    CanvasJSAngularChartsModule,
     AppRoutingModule,
     HttpClientModule  //Registro de módulo importado
   ],
