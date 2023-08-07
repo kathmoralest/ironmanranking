@@ -31,10 +31,10 @@ import { TitulostotalComponent } from './titulostotal/titulostotal.component';
     TitulostotalComponent,
   ],
   imports: [
-    BrowserModule,
-    CanvasJSAngularChartsModule,
     AppRoutingModule,
-    HttpClientModule  //Registro de módulo importado
+    HttpClientModule,  //Registro de módulo importado
+    BrowserModule,
+    CanvasJSAngularChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
