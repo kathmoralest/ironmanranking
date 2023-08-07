@@ -26,7 +26,6 @@ jobs:
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         - name: Checkout
           uses: actions/checkout@v3
-
         - name: Setup Node.js environment
           uses: actions/setup-node@v3.7.0
           with:
@@ -38,6 +37,6 @@ jobs:
         - name: Deploy
           uses: crazy-max/ghaction-github-pages@v3.1.0
           with:
-            build_dir: /.github/workflows/deploy.yml
+            build_dir: dist/.github/workflows/deploy.yml
           env:
             GITHUB_TOKEN:  ${{secrets.GITHUB_TOKEN}} 
