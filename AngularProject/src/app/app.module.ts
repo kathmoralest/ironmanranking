@@ -11,6 +11,11 @@ import { Top3FemComponent } from './top3-fem/top3-fem.component';
 import { GraficoComponent } from './grafico/grafico.component';
 
 import { HttpClientModule } from  '@angular/common/http';
+import { PromedioTiempoManComponent } from './promedio-tiempo-man/promedio-tiempo-man.component';
+import { PromedioTiempoFemComponent } from './promedio-tiempo-fem/promedio-tiempo-fem.component';
+
+import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+import { TitulostotalComponent } from './titulostotal/titulostotal.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +25,14 @@ import { HttpClientModule } from  '@angular/common/http';
     AboutComponent,
     Top3MaleComponent,
     Top3FemComponent,
-    GraficoComponent
+    GraficoComponent,
+    PromedioTiempoManComponent,
+    PromedioTiempoFemComponent,
+    TitulostotalComponent,
   ],
   imports: [
     BrowserModule,
+    CanvasJSAngularChartsModule,
     AppRoutingModule,
     HttpClientModule  //Registro de módulo importado
   ],
